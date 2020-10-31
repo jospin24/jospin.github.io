@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="styles.css">
+
+        <title>The Chocolate Shop</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Coffee</a>
+                </div>
+                
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <div class="nav__close" id="nav-close">
+                        <i class='bx bx-x'></i>
+                    </div>
+
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Blog</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+<!-- Start of Async Drift Code -->
+<script>
+    "use strict";
+    
+    !function() {
+      var t = window.driftt = window.drift = window.driftt || [];
+      if (!t.init) {
+        if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+        t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+        t.factory = function(e) {
+          return function() {
+            var n = Array.prototype.slice.call(arguments);
+            return n.unshift(e), t.push(n), t;
+          };
+        }, t.methods.forEach(function(e) {
+          t[e] = t.factory(e);
+        }), t.load = function(t) {
+          var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+          o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+          var i = document.getElementsByTagName("script")[0];
+          i.parentNode.insertBefore(o, i);
+        };
+      }
+    }();
+    drift.SNIPPET_VERSION = '0.3.1';
+    drift.load('b4nrfe6nhz3c');
+    </script>
+    <!-- End of Async Drift Code -->
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home" id="home">
+                <div class="home__container bd-grid">
+                    <div class="home__img">
+                        <!-- <img src="img/img1.jpg" alt="" data-speed="-2" class="move">
+                        <img src="img/img2.png" alt="" data-speed="2" class="move">
+                        <img src="img/imag1.png" alt="" data-speed="2" class="move">
+                        <img src="img/img4.png" alt="" data-speed="-2" class="move">
+                        <img src="img/img5.png" alt="" data-speed="-2" class="move">
+                        <img src="img/img6.png" alt="" data-speed="2" class="move"> -->
+                        
+                        <img src="img/cc_1.png" alt="" data-speed="-2" class="move">
+                        
+                        <img src="img/imag22.png" alt="" data-speed="2" class="move">
+                        
+                    </div>
+
+                    <div class="home__data">
+                        <h1 class="home__title">Chocolate<br> Shop</h1>
+                        <p class="home__description">Nothing taste better than chocolate <br> Checkour menu of the week.</p>
+                        <a href="#" class="home__button">Eplore</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--===== GSAP =====-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="main.js"></script>
+    </body>
+</html>
